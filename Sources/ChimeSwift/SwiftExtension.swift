@@ -12,15 +12,39 @@ public final class SwiftExtension {
 
 	public init(host: any HostProtocol) {
 		self.host = host
-		self.logger = Logger(subsystem: "com.chimehq.ChimeSwift", category: "ChimeSwift")
+		self.logger = Logger(subsystem: "com.chimehq.ChimeSwift", category: "SwiftExtension")
 
-		let docFilter: LSPService.DocumentFilter = { docContext in
-			return docContext.uti.conforms(to: .swiftSource)
+		let filter: LSPService.ContextFilter = { (projContext, docContext) in
+			let uti = docContext?.uti
+
+			// here is where we could also consider C-based languages
+			if uti?.conforms(to: .swiftSource) == true {
+				return true
+			}
+
+			return SwiftExtension.projectRoot(at: projContext.url)
 		}
 
 		self.lspService = LSPService(host: host,
-									 documentFilter: docFilter,
+									 contextFilter: filter,
 									 executionParamsProvider: SwiftExtension.provideParams)
+	}
+
+	private static func projectRoot(at url: URL) -> Bool {
+		let enumerator = FileManager.default.enumerator(at: url,
+														includingPropertiesForKeys: [.contentTypeKey],
+														options: [.skipsSubdirectoryDescendants, .skipsHiddenFiles])
+
+
+		while let item = enumerator?.nextObject() as? URL {
+			let values = try? item.resourceValues(forKeys: [.contentTypeKey])
+
+			if values?.contentType?.conforms(to: .swiftSource) == true {
+				return true
+			}
+		}
+
+		return false
 	}
 }
 
