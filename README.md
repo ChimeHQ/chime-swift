@@ -1,2 +1,4 @@
 # chime-swift
-A Chime extension for Swift
+A [Chime][chime] extension for Swift
+
+[chime]: https://www.chimehq.com
