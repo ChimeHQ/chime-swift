@@ -1,9 +1,7 @@
 import Foundation
-import ExtensionFoundation
 import os.log
 
 import ChimeKit
-import LanguageServerProtocol
 
 public final class SwiftExtension {
 	let host: any HostProtocol
@@ -14,37 +12,10 @@ public final class SwiftExtension {
 		self.host = host
 		self.logger = Logger(subsystem: "com.chimehq.ChimeSwift", category: "SwiftExtension")
 
-		let filter: LSPService.ContextFilter = { (projContext, docContext) in
-			let uti = docContext?.uti
-
-			// here is where we could also consider C-based languages
-			if uti?.conforms(to: .swiftSource) == true {
-				return true
-			}
-
-			return SwiftExtension.projectRoot(at: projContext.url)
-		}
-
+        let filter = LSPService.contextFilter(for: [.swiftSource])
 		self.lspService = LSPService(host: host,
-									 contextFilter: filter,
+                                     contextFilter: filter,
 									 executionParamsProvider: SwiftExtension.provideParams)
-	}
-
-	private static func projectRoot(at url: URL) -> Bool {
-		let enumerator = FileManager.default.enumerator(at: url,
-														includingPropertiesForKeys: [.contentTypeKey],
-														options: [.skipsSubdirectoryDescendants, .skipsHiddenFiles])
-
-
-		while let item = enumerator?.nextObject() as? URL {
-			let values = try? item.resourceValues(forKeys: [.contentTypeKey])
-
-			if values?.contentType?.conforms(to: .swiftSource) == true {
-				return true
-			}
-		}
-
-		return false
 	}
 }
 

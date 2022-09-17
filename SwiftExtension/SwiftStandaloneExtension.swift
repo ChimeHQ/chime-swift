@@ -1,21 +1,15 @@
 import Foundation
-import ExtensionFoundation
-
 import ChimeKit
-import LanguageServerProtocol
 
 @main
-class SwiftStandaloneExtension: ChimeExtension {
-	var hostApp: HostProtocol? {
-		get { return chimeExt?.host }
-		set {
-			self.chimeExt = newValue.map({ SwiftExtension(host: $0) })
-		}
-	}
-
+final class SwiftStandaloneExtension: ChimeExtension {
 	private var chimeExt: SwiftExtension?
 
 	required init() {
+	}
+
+	func acceptHostConnection(_ host: HostProtocol) throws {
+		self.chimeExt = SwiftExtension(host: host)
 	}
 }
 
