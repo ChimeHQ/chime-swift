@@ -14,6 +14,8 @@
 		C9C51FA628D9D2F700998F53 /* ChimeSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C9C51FA528D9D2F700998F53 /* ChimeSwift */; };
 		C9D5C31128C8D4F80005BC69 /* SwiftStandaloneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D5C31028C8D4F80005BC69 /* SwiftStandaloneExtension.swift */; };
 		C9D5C31628C8D4F80005BC69 /* SwiftExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C9D5C30E28C8D4F80005BC69 /* SwiftExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C9DCF97528DA373E009ACED7 /* ChimeKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9DCF97428DA373E009ACED7 /* ChimeKit.xcframework */; };
+		C9DCF97728DA3745009ACED7 /* ChimeKit.xcframework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C9DCF97628DA3745009ACED7 /* ChimeKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C9DCF97728DA3745009ACED7 /* ChimeKit.xcframework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,11 +51,12 @@
 		C95906DF28C8D49E002C9696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C95906E128C8D49E002C9696 /* SwiftExtensionContainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftExtensionContainer.entitlements; sourceTree = "<group>"; };
 		C9C51FA428D9D2C900998F53 /* chime-swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "chime-swift"; path = ..; sourceTree = "<group>"; };
-		C9C51FAB28DA0CB300998F53 /* ChimeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ChimeKit.xcframework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftExtensionContainer-dpxkuloyqlbnmjbwttxoyopewmxo/SourcePackages/checkouts/ChimeKit/ChimeKit.xcframework"; sourceTree = "<group>"; };
 		C9D5C30E28C8D4F80005BC69 /* SwiftExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = SwiftExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D5C31028C8D4F80005BC69 /* SwiftStandaloneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStandaloneExtension.swift; sourceTree = "<group>"; };
 		C9D5C31228C8D4F80005BC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D5C31328C8D4F80005BC69 /* SwiftExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftExtension.entitlements; sourceTree = "<group>"; };
+		C9DCF97428DA373E009ACED7 /* ChimeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ChimeKit.xcframework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftExtensionContainer-finiswuxnibafkdzeivtlpttdmyg/SourcePackages/checkouts/ChimeKit/ChimeKit.xcframework"; sourceTree = "<group>"; };
+		C9DCF97628DA3745009ACED7 /* ChimeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ChimeKit.xcframework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftExtensionContainer-finiswuxnibafkdzeivtlpttdmyg/SourcePackages/checkouts/ChimeKit/ChimeKit.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9C51FA628D9D2F700998F53 /* ChimeSwift in Frameworks */,
+				C9DCF97528DA373E009ACED7 /* ChimeKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +82,7 @@
 		C95906CC28C8D49D002C9696 = {
 			isa = PBXGroup;
 			children = (
-				C9C51FAB28DA0CB300998F53 /* ChimeKit.xcframework */,
+				C9DCF97628DA3745009ACED7 /* ChimeKit.xcframework */,
 				C9C51FA428D9D2C900998F53 /* chime-swift */,
 				C95906D728C8D49D002C9696 /* SwiftExtensionContainer */,
 				C9D5C30F28C8D4F80005BC69 /* SwiftExtension */,
@@ -128,6 +133,7 @@
 		C9D5C32128C8D5930005BC69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9DCF97428DA373E009ACED7 /* ChimeKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
