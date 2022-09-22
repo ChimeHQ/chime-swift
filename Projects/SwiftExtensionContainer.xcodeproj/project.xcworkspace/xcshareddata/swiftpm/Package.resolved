@@ -15,7 +15,7 @@
       "location" : "https://github.com/ChimeHQ/ChimeKit",
       "state" : {
         "branch" : "main",
-        "revision" : "a6e75d1a8d675a79f6432eda0b24c741ebe99257"
+        "revision" : "4a31e1e21e13217c662b46c7d4bf230e072937b4"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/LanguageServerProtocol",
       "state" : {
-        "revision" : "a4e0298224403f36985c0ecb1363bc933b5a9c33",
-        "version" : "0.7.5"
+        "revision" : "2da23020efce0a092a1f26fb519059800e8ce233",
+        "version" : "0.7.6"
       }
     },
     {
