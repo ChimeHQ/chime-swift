@@ -9,6 +9,12 @@ This Chime extension supports the [Swift][swift] programming language. It integr
 
 This project is featured as a tutorial in ChimeKit's reference [documentation][documentation tutorial].
 
+## Installation
+
+chime-swift's core functionality is built directly into Chime 2.0.
+
+But, you can always open up the included Xcode project and build the container app to make the ExtensionKit extension available on your local machine.
+
 ## Future Development
 
 A language server is not required to provide semantic languages features to Chime. A way to expand this extension would be to directly integrate with SourceKit, possibly via [SourceKitten][sourcekitten]. This could offer a lower-overhead implementation, while also providing additional features not directly exposed via Language Server Protocol. Also would be pretty cool.
