@@ -26,4 +26,4 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 [sourcekit-lsp]: https://github.com/apple/sourcekit-lsp
 [sourcekitten]: https://github.com/jpsim/SourceKitten
 [chimekit]: https://github.com/ChimeHQ/ChimeKit
-[documentation tutorial]: https://swiftpackageindex.com/chimehq/chimekit/main/tutorials/create-an-extension
+[documentation tutorial]: https://swiftpackageindex.com/chimehq/chimekit/main/documentation
