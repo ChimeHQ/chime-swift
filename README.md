@@ -7,7 +7,7 @@ A [Chime][chime] extension for Swift.
 
 This Chime extension supports the [Swift][swift] programming language. It integrates [sourcekit-lsp][sourcekit-lsp] with [ChimeKit][chimekit]'s `ExtensionProtocol`.
 
-This project is featured as a tutorial in ChimeKit's reference [documentation][documentation tutorial].
+This project is featured as a [tutorial][tutorial] in ChimeKit's reference [documentation][documentation].
 
 ## Installation
 
@@ -38,4 +38,5 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 [sourcekitten]: https://github.com/jpsim/SourceKitten
 [swiftformat]: https://github.com/nicklockwood/SwiftFormat
 [chimekit]: https://github.com/ChimeHQ/ChimeKit
-[documentation tutorial]: https://swiftpackageindex.com/chimehq/chimekit/main/documentation
+[documentation]: https://swiftpackageindex.com/chimehq/chimekit/main/documentation
+[tutorial]: https://swiftpackageindex.com/chimehq/chimekit/main/tutorials/create-an-extension
