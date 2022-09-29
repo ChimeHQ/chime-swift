@@ -17,7 +17,12 @@ But, you can always open up the included Xcode project and build the container a
 
 ## Future Development
 
-A language server is not required to provide semantic languages features to Chime. A way to expand this extension would be to directly integrate with SourceKit, possibly via [SourceKitten][sourcekitten]. This could offer a lower-overhead implementation, while also providing additional features not directly exposed via Language Server Protocol. Also would be pretty cool.
+A language server is not required to provide semantic languages features to Chime. A way to expand this extension would be to directly integrate with native tooling. This could offer a lower-overhead implementation, while also providing additional features not directly exposed via Language Server Protocol. Plus, it would be pretty cool.
+
+Relevant projects:
+
+- [SourceKitten][sourcekitten]
+- [SwiftFormat][swiftformat]
 
 ## Suggestions or Feedback
 
@@ -31,5 +36,6 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 [swift]: https://www.swift.org
 [sourcekit-lsp]: https://github.com/apple/sourcekit-lsp
 [sourcekitten]: https://github.com/jpsim/SourceKitten
+[swiftformat]: https://github.com/nicklockwood/SwiftFormat
 [chimekit]: https://github.com/ChimeHQ/ChimeKit
 [documentation tutorial]: https://swiftpackageindex.com/chimehq/chimekit/main/documentation
