@@ -15,7 +15,7 @@
       "location" : "https://github.com/ChimeHQ/ChimeKit",
       "state" : {
         "branch" : "main",
-        "revision" : "4a31e1e21e13217c662b46c7d4bf230e072937b4"
+        "revision" : "3da3d6ec3d7517511530c13f9b8d24d85adc983f"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/ConcurrencyPlus",
       "state" : {
-        "revision" : "fb4d31826c4c46a0d39451b9c911dfde8fbcc2bd",
-        "version" : "0.3.1"
+        "revision" : "d603e3f8be17e71d93ec650fb31674b928b26e22",
+        "version" : "0.3.3"
       }
     },
     {
@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/LanguageClient",
       "state" : {
-        "revision" : "abe7f2d74623af92a68d3f18a0cb31ed11ce965f",
-        "version" : "0.2.5"
+        "revision" : "f38654cb46d0d8fdc5cfab10d4d05bf4400ea7eb",
+        "version" : "0.2.6"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/LanguageServerProtocol",
       "state" : {
-        "revision" : "2da23020efce0a092a1f26fb519059800e8ce233",
-        "version" : "0.7.6"
+        "revision" : "de01741394922130a7667b99fc55f8aac580ebb8",
+        "version" : "0.7.7"
       }
     },
     {
@@ -104,8 +104,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/ProcessService",
       "state" : {
-        "revision" : "ac757f19da4b152ebe77e0b9bb5510dc55917d3e",
-        "version" : "0.1.1"
+        "revision" : "8481508879714dafeb1c460c93aee180430ada35",
+        "version" : "0.1.2"
       }
     }
   ],
