@@ -1,16 +1,19 @@
 import Foundation
 import ChimeKit
 import ChimeSwift
+import ProcessServiceContainer
 
 @main
 final class SwiftStandaloneExtension: ChimeExtension {
 	private var chimeExt: SwiftExtension?
 
 	required init() {
+		ServiceContainer.bootstrap()
 	}
 
 	func acceptHostConnection(_ host: HostProtocol) throws {
-		self.chimeExt = SwiftExtension(host: host)
+
+		self.chimeExt = SwiftExtension(host: host, processHostServiceName: ServiceContainer.name)
 	}
 }
 
