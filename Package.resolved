@@ -1,21 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "anycodable",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Flight-School/AnyCodable",
-      "state" : {
-        "revision" : "b1a7a8a6186f2fcb28f7bda67cfc545de48b3c80",
-        "version" : "0.6.2"
-      }
-    },
-    {
       "identity" : "chimekit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/ChimeKit",
       "state" : {
-        "branch" : "test/package-change",
-        "revision" : "3f7ff29ca5a759fa37b192f9b062f811e5f3f72a"
+        "revision" : "ef60392c0700a7d312e54d01aa58f57cd61a4bf9",
+        "version" : "0.2.0"
       }
     },
     {
@@ -59,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/JSONRPC",
       "state" : {
-        "revision" : "55071da13d109e61584750f39c0941d49711b962",
-        "version" : "0.5.0"
+        "revision" : "afc20d00e38674774f84edc325424a32ae3b9e01",
+        "version" : "0.7.0"
       }
     },
     {
@@ -68,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/LanguageClient",
       "state" : {
-        "revision" : "f38654cb46d0d8fdc5cfab10d4d05bf4400ea7eb",
-        "version" : "0.2.6"
+        "revision" : "92beeecd0bb783da52227839ba6c55e43fc866ec",
+        "version" : "0.5.1"
       }
     },
     {
@@ -77,17 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/LanguageServerProtocol",
       "state" : {
-        "revision" : "de01741394922130a7667b99fc55f8aac580ebb8",
-        "version" : "0.7.7"
-      }
-    },
-    {
-      "identity" : "operationplus",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ChimeHQ/OperationPlus",
-      "state" : {
-        "revision" : "1340f95dce3e93d742497d88db18f8676f4badf4",
-        "version" : "1.6.0"
+        "revision" : "192bcfdcf7a013da49c6fa1b95de66254ce7c614",
+        "version" : "0.9.1"
       }
     },
     {
@@ -104,8 +86,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/ProcessService",
       "state" : {
-        "revision" : "8481508879714dafeb1c460c93aee180430ada35",
-        "version" : "0.1.2"
+        "revision" : "e759eb8038c675e86f8b4b703dd3298e62a8e340",
+        "version" : "0.2.3"
       }
     }
   ],

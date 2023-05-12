@@ -6,15 +6,10 @@ import ChimeKit
 public final class SwiftExtension {
 	let host: any HostProtocol
 	private let lspService: LSPService
-	private let logger: Logger
 
 	public init(host: any HostProtocol, processHostServiceName: String?) {
 		self.host = host
-		self.logger = Logger(subsystem: "com.chimehq.ChimeSwift", category: "SwiftExtension")
-
-		let filter = LSPService.contextFilter(for: [.swiftSource])
 		self.lspService = LSPService(host: host,
-									 contextFilter: filter,
 									 executionParamsProvider: SwiftExtension.provideParams,
 									 processHostServiceName: processHostServiceName)
 	}
@@ -27,6 +22,12 @@ extension SwiftExtension {
 }
 
 extension SwiftExtension: ExtensionProtocol {
+	public var configuration: ExtensionConfiguration {
+		get async throws {
+			return ExtensionConfiguration(contentFilter: [.uti(.swiftSource)])
+		}
+	}
+
 	public func didOpenProject(with context: ProjectContext) async throws {
 		try await lspService.didOpenProject(with: context)
 	}
