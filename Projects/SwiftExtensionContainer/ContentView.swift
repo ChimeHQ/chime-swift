@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ProcessServiceContainer
 
 struct ContentView: View {
     var body: some View {
@@ -13,7 +14,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+			Text("Hello, world!: \(ServiceContainer.name)")
         }
         .padding()
     }

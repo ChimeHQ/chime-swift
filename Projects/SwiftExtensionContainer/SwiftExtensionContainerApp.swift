@@ -1,14 +1,12 @@
-//
-//  SwiftExtensionContainerApp.swift
-//  SwiftExtensionContainer
-//
-//  Created by Matthew Massicotte on 2022-09-07.
-//
-
 import SwiftUI
+import ProcessServiceContainer
 
 @main
 struct SwiftExtensionContainerApp: App {
+	init() {
+		_ = ServiceContainer.name
+	}
+	
     var body: some Scene {
         WindowGroup {
             ContentView()

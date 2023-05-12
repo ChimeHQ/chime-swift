@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9332E6A28F7120800C8A5AF /* ProcessServiceContainer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9332E6928F7120800C8A5AF /* ProcessServiceContainer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C9332E6B28F7121900C8A5AF /* ProcessServiceContainer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9332E6928F7120800C8A5AF /* ProcessServiceContainer.xcframework */; };
 		C95906D928C8D49D002C9696 /* SwiftExtensionContainerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95906D828C8D49D002C9696 /* SwiftExtensionContainerApp.swift */; };
 		C95906DB28C8D49D002C9696 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95906DA28C8D49D002C9696 /* ContentView.swift */; };
 		C95906DD28C8D49E002C9696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95906DC28C8D49E002C9696 /* Assets.xcassets */; };
@@ -18,6 +16,16 @@
 		C9D5C31628C8D4F80005BC69 /* SwiftExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C9D5C30E28C8D4F80005BC69 /* SwiftExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C9806D7F29055C0700D39F0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C95906CD28C8D49D002C9696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9D5C30D28C8D4F80005BC69;
+			remoteInfo = SwiftExtension;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		C9CD9F5228E7468400D9A983 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -25,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C9332E6A28F7120800C8A5AF /* ProcessServiceContainer.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +51,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C9332E6928F7120800C8A5AF /* ProcessServiceContainer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ProcessServiceContainer.xcframework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftExtensionContainer-finiswuxnibafkdzeivtlpttdmyg/SourcePackages/checkouts/ProcessService/ProcessServiceContainer.xcframework"; sourceTree = "<group>"; };
 		C95906D528C8D49D002C9696 /* SwiftExtensionContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExtensionContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95906D828C8D49D002C9696 /* SwiftExtensionContainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensionContainerApp.swift; sourceTree = "<group>"; };
 		C95906DA28C8D49D002C9696 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +58,6 @@
 		C95906DF28C8D49E002C9696 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C95906E128C8D49E002C9696 /* SwiftExtensionContainer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftExtensionContainer.entitlements; sourceTree = "<group>"; };
 		C9C51FA428D9D2C900998F53 /* chime-swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "chime-swift"; path = ..; sourceTree = "<group>"; };
-		C9CD9F4F28E7468300D9A983 /* ChimeKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ChimeKit.xcframework; path = ../../ChimeKit/ChimeKit.xcframework; sourceTree = "<group>"; };
 		C9D5C30E28C8D4F80005BC69 /* SwiftExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = SwiftExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D5C31028C8D4F80005BC69 /* SwiftStandaloneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStandaloneExtension.swift; sourceTree = "<group>"; };
 		C9D5C31228C8D4F80005BC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9332E6B28F7121900C8A5AF /* ProcessServiceContainer.xcframework in Frameworks */,
 				C9C51FA628D9D2F700998F53 /* ChimeSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +86,6 @@
 		C95906CC28C8D49D002C9696 = {
 			isa = PBXGroup;
 			children = (
-				C9332E6928F7120800C8A5AF /* ProcessServiceContainer.xcframework */,
 				C9C51FA428D9D2C900998F53 /* chime-swift */,
 				C95906D728C8D49D002C9696 /* SwiftExtensionContainer */,
 				C9D5C30F28C8D4F80005BC69 /* SwiftExtension */,
@@ -133,7 +136,6 @@
 		C9D5C32128C8D5930005BC69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C9CD9F4F28E7468300D9A983 /* ChimeKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +156,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C9806D8029055C0700D39F0C /* PBXTargetDependency */,
 				C9332E6828F711F000C8A5AF /* PBXTargetDependency */,
 			);
 			name = SwiftExtensionContainer;
@@ -172,7 +175,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C9332E6628F711D000C8A5AF /* PBXTargetDependency */,
+				C905650628F971B600FC65DA /* PBXTargetDependency */,
 				C9CD9FF928EAFC5500D9A983 /* PBXTargetDependency */,
 			);
 			name = SwiftExtension;
@@ -263,13 +266,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C9332E6628F711D000C8A5AF /* PBXTargetDependency */ = {
+		C905650628F971B600FC65DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = C9332E6528F711D000C8A5AF /* ProcessServiceContainer */;
+			productRef = C905650528F971B600FC65DA /* ProcessServiceContainer */;
 		};
 		C9332E6828F711F000C8A5AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = C9332E6728F711F000C8A5AF /* ProcessServiceContainer */;
+		};
+		C9806D8029055C0700D39F0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9D5C30D28C8D4F80005BC69 /* SwiftExtension */;
+			targetProxy = C9806D7F29055C0700D39F0C /* PBXContainerItemProxy */;
 		};
 		C9CD9FF928EAFC5500D9A983 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -537,7 +545,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C9332E6528F711D000C8A5AF /* ProcessServiceContainer */ = {
+		C905650528F971B600FC65DA /* ProcessServiceContainer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ProcessServiceContainer;
 		};
