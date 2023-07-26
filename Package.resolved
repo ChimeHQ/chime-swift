@@ -1,21 +1,21 @@
 {
   "pins" : [
     {
+      "identity" : "asyncxpcconnection",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ChimeHQ/AsyncXPCConnection",
+      "state" : {
+        "revision" : "82a0eb00a0d881e6a65cad0acc031c1efd058d06",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "chimekit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/ChimeKit",
       "state" : {
-        "revision" : "ef60392c0700a7d312e54d01aa58f57cd61a4bf9",
-        "version" : "0.2.0"
-      }
-    },
-    {
-      "identity" : "concurrencyplus",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ChimeHQ/ConcurrencyPlus",
-      "state" : {
-        "revision" : "d603e3f8be17e71d93ec650fb31674b928b26e22",
-        "version" : "0.3.3"
+        "revision" : "feeafd83a59a79e014a5ac1e0ab3fb72e7e4edce",
+        "version" : "0.3.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/Extendable",
       "state" : {
-        "revision" : "1e5f8b3b4e64fcfca4bfd5b0b38679cac7ea14c9",
-        "version" : "0.1.1"
+        "revision" : "ed81589a7be2b990baf41cbefffd2ac19e669694",
+        "version" : "0.2.0"
       }
     },
     {
@@ -32,17 +32,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Frizlab/FSEventsWrapper",
       "state" : {
-        "revision" : "e0c59a2ce2775e5f6642da6d19207445f10112d0",
-        "version" : "1.0.2"
+        "revision" : "70bbea4b108221fcabfce8dbced8502831c0ae04",
+        "version" : "2.1.0"
       }
     },
     {
-      "identity" : "glob",
+      "identity" : "globpattern",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Bouke/Glob",
+      "location" : "https://github.com/ChimeHQ/GlobPattern",
       "state" : {
-        "revision" : "deda6e163d2ff2a8d7e138e2c3326dbd71157faf",
-        "version" : "1.0.5"
+        "revision" : "4ebb9e89e07cc475efa74f87dc6d21f4a9e060f8",
+        "version" : "0.1.1"
       }
     },
     {
@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/JSONRPC",
       "state" : {
-        "revision" : "afc20d00e38674774f84edc325424a32ae3b9e01",
-        "version" : "0.7.0"
+        "revision" : "1ae27fceaec3208f62b3ef23d2d565d4222c3ac6",
+        "version" : "0.8.1"
       }
     },
     {
@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/LanguageClient",
       "state" : {
-        "revision" : "92beeecd0bb783da52227839ba6c55e43fc866ec",
-        "version" : "0.5.1"
+        "revision" : "092fe0dac8183dff8feeb91f10f2e6a88a43852d",
+        "version" : "0.6.0"
       }
     },
     {
@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/LanguageServerProtocol",
       "state" : {
-        "revision" : "192bcfdcf7a013da49c6fa1b95de66254ce7c614",
-        "version" : "0.9.1"
+        "revision" : "a244efe43ac7a42577b4afd9ccc43b5223c7f18d",
+        "version" : "0.10.0"
       }
     },
     {
@@ -77,17 +77,26 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChimeHQ/ProcessEnv",
       "state" : {
-        "revision" : "7bcb6c11593be08456f48042fad1a7bf875f217a",
-        "version" : "0.3.0"
+        "revision" : "29487b6581bb785c372c611c943541ef4309d051",
+        "version" : "0.3.1"
       }
     },
     {
-      "identity" : "processservice",
+      "identity" : "queue",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ChimeHQ/ProcessService",
+      "location" : "https://github.com/mattmassicotte/Queue",
       "state" : {
-        "revision" : "e759eb8038c675e86f8b4b703dd3298e62a8e340",
-        "version" : "0.2.3"
+        "revision" : "8d6f936097888f97011610ced40313655dc5948d",
+        "version" : "0.1.4"
+      }
+    },
+    {
+      "identity" : "semaphore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/groue/Semaphore",
+      "state" : {
+        "revision" : "f1c4a0acabeb591068dea6cffdd39660b86dec28",
+        "version" : "0.0.8"
       }
     }
   ],
