@@ -9,14 +9,19 @@ public final class SwiftExtension {
 
 	public init(host: any HostProtocol) {
 		self.host = host
+
+		let paramProvider = { try await SwiftExtension.provideParams(host: host) }
+
 		self.lspService = LSPService(host: host,
-									 executionParamsProvider: SwiftExtension.provideParams)
+									 executionParamsProvider: paramProvider)
 	}
 }
 
 extension SwiftExtension {
-	private static func provideParams() throws -> Process.ExecutionParameters {
-		return .init(path: "/usr/bin/sourcekit-lsp")
+	private static func provideParams(host: any HostProtocol) async throws -> Process.ExecutionParameters {
+		let userEnv = try await host.captureUserEnvironment()
+
+		return .init(path: "/usr/bin/sourcekit-lsp", environment: userEnv)
 	}
 }
 
