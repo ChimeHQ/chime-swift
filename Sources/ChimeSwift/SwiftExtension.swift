@@ -30,7 +30,7 @@ extension SwiftExtension: ExtensionProtocol {
 		ExtensionConfiguration(contentFilter: [.uti(.swiftSource)])
 	}
 
-	public var applicationService: ApplicationService {
+	public var applicationService: some ApplicationService {
 		return lspService
 	}
 }
